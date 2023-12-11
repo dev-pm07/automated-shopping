@@ -9,8 +9,17 @@ public class Main {
                 "██████╔╝██║░░██║╚█████╔╝██║░░░░░██║░░░░░░░░██║░░░\r\n" + //
                 "╚═════╝░╚═╝░░╚═╝░╚════╝░╚═╝░░░░░╚═╝░░░░░░░░╚═╝░░░");      
         
-    Shop walmart = new Shop(); 
-    
+        Shop walmart = new Shop("Walmart");
+        walmart.applyCoupons();
+        System.out.println("After coupons:\t" + walmart.products);
+
+        Shop target = new Shop("Target");
+        target.applyCoupons();
+        System.out.println("After coupons:\t" + target.products);
+
+        Shop kroger = new Shop("Kroger");
+        kroger.applyCoupons();
+        System.out.println("After coupons:\t" + kroger.products);
     }
-    
+
 } 
